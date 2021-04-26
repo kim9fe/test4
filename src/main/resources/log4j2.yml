@@ -30,7 +30,7 @@ Configutation:
           SizeBasedTriggeringPolicy:
             size: 1 MB
         DefaultRollOverStrategy:
-          max: 30
+          max: 10
   Loggers:
     Root:
       level: warn
