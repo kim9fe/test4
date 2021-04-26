@@ -9,6 +9,7 @@ version = '0.0.1-SNAPSHOT'
 sourceCompatibility = '11'
 
 configurations {
+	jar.archiveName='com.kim9fe.test4.jar'
 	compileOnly {
 		extendsFrom annotationProcessor
 	}

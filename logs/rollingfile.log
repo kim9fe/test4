@@ -7031,3 +7031,4 @@ Unconditional classes:
 [INFO ] 2021-04-26 14:38:08.197 [Thread-11] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
 [INFO ] 2021-04-26 14:38:08.198 [Thread-11] HikariDataSource - HikariPool-3 - Shutdown initiated...
 [INFO ] 2021-04-26 14:38:08.203 [Thread-11] HikariDataSource - HikariPool-3 - Shutdown completed.
+${log-pattern}${log-pattern}[WARN ] 2021-04-26 16:31:51.887 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used

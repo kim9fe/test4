@@ -35,3 +35,18 @@ out/
 
 ### VS Code ###
 .vscode/
+${log-path}/logfile.log
+${log-path}/rollingfile.log
+gradle/wrapper/gradle-wrapper.jar
+gradle/wrapper/gradle-wrapper.properties
+${log-path}/logfile.log
+${log-path}/rollingfile.log
+${log-path}/logfile.log
+${log-path}/rollingfile.log
+.gitignore
+${log-path}/logfile.log
+${log-path}/rollingfile.log
+.gitignore
+logs/rollingfile.log
+logs/logfile.log
+.gitignore
