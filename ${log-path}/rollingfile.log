@@ -1,0 +1,217 @@
+[INFO ] 2021-04-26 14:42:11.752 [restartedMain] Test4Application - Started Test4Application in 3.385 seconds (JVM running for 4.481)
+[DEBUG] 2021-04-26 14:42:11.765 [restartedMain] Restarter - Creating new Restarter for thread Thread[main,5,main]
+[DEBUG] 2021-04-26 14:42:11.765 [restartedMain] Restarter - Immediately restarting application
+[DEBUG] 2021-04-26 14:42:11.765 [restartedMain] Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@203d0373
+[DEBUG] 2021-04-26 14:42:11.765 [restartedMain] Restarter - Starting application com.kim9fe.test4.Test4Application with URLs [file:/D:/workplace/test4/bin/main/]
+[DEBUG] 2021-04-26 14:42:19.345 [XNIO-1 task-1] security - Attempting to authenticate /board, authentication required: false
+[DEBUG] 2021-04-26 14:42:19.347 [XNIO-1 task-1] security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@107ccf79 for /board
+[DEBUG] 2021-04-26 14:42:19.347 [XNIO-1 task-1] security - Authentication result was ATTEMPTED for /board
+[INFO ] 2021-04-26 14:42:19.349 [XNIO-1 task-1] servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-04-26 14:42:19.349 [XNIO-1 task-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 14:42:19.349 [XNIO-1 task-1] DispatcherServlet - Detected StandardServletMultipartResolver
+[DEBUG] 2021-04-26 14:42:19.349 [XNIO-1 task-1] DispatcherServlet - Detected AcceptHeaderLocaleResolver
+[DEBUG] 2021-04-26 14:42:19.349 [XNIO-1 task-1] DispatcherServlet - Detected FixedThemeResolver
+[DEBUG] 2021-04-26 14:42:19.350 [XNIO-1 task-1] DispatcherServlet - Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@3b1f118
+[DEBUG] 2021-04-26 14:42:19.350 [XNIO-1 task-1] DispatcherServlet - Detected org.springframework.web.servlet.support.SessionFlashMapManager@1073927c
+[DEBUG] 2021-04-26 14:42:19.351 [XNIO-1 task-1] DispatcherServlet - enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+[INFO ] 2021-04-26 14:42:19.351 [XNIO-1 task-1] DispatcherServlet - Completed initialization in 2 ms
+[DEBUG] 2021-04-26 14:42:19.360 [XNIO-1 task-1] DispatcherServlet - POST "/board?title=%EC%83%88%EB%A1%AD%EA%B2%8C...&content=%EB%82%B4%EC%9A%A9...%20POST", parameters={masked}
+[DEBUG] 2021-04-26 14:42:19.363 [XNIO-1 task-1] RequestMappingHandlerMapping - Mapped to com.kim9fe.test4.controller.BoardController#insertBoard(BoardDTO)
+[DEBUG] 2021-04-26 14:42:19.385 [XNIO-1 task-1] CachedIntrospectionResults - Not strongly caching class [com.kim9fe.test4.domain.BoardDTO] because it is not cache-safe
+[DEBUG] 2021-04-26 14:42:19.387 [XNIO-1 task-1] BoardServiceImpl - ID >>>> 0 LOGGER 사용
+[INFO ] 2021-04-26 14:42:19.388 [XNIO-1 task-1] BoardServiceImpl - ID >>>> 0 LOGGER 사용
+[ERROR] 2021-04-26 14:42:19.388 [XNIO-1 task-1] BoardServiceImpl - ID >>>> 0 LOGGER 사용
+[DEBUG] 2021-04-26 14:42:19.397 [XNIO-1 task-1] SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2021-04-26 14:42:19.402 [XNIO-1 task-1] SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30542390] was not registered for synchronization because synchronization is not active
+[DEBUG] 2021-04-26 14:42:19.410 [XNIO-1 task-1] DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2021-04-26 14:42:19.414 [XNIO-1 task-1] SpringManagedTransaction - JDBC Connection [HikariProxyConnection@647573655 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7] will not be managed by Spring
+[DEBUG] 2021-04-26 14:42:19.425 [XNIO-1 task-1] insertBoard - ==>  Preparing: INSERT INTO board ( id , title , content ) SELECT ifnull(max(id), 0) + 1 , ? , ? FROM board
+[DEBUG] 2021-04-26 14:42:19.471 [XNIO-1 task-1] insertBoard - ==> Parameters: 새롭게...(String), 내용... POST(String)
+[DEBUG] 2021-04-26 14:42:19.473 [XNIO-1 task-1] insertBoard - <==    Updates: 1
+[DEBUG] 2021-04-26 14:42:19.474 [XNIO-1 task-1] SpringManagedTransaction - Committing JDBC Connection [HikariProxyConnection@647573655 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7]
+[DEBUG] 2021-04-26 14:42:19.478 [XNIO-1 task-1] SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30542390]
+[INFO ] 2021-04-26 14:42:19.479 [XNIO-1 task-1] BoardServiceImpl - REGIST RESULT = [1]
+[DEBUG] 2021-04-26 14:42:19.481 [XNIO-1 task-1] SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2021-04-26 14:42:19.481 [XNIO-1 task-1] SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44f10109] was not registered for synchronization because synchronization is not active
+[DEBUG] 2021-04-26 14:42:19.483 [XNIO-1 task-1] DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2021-04-26 14:42:19.483 [XNIO-1 task-1] SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2071993713 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7] will not be managed by Spring
+[DEBUG] 2021-04-26 14:42:19.483 [XNIO-1 task-1] selectBoardList - ==>  Preparing: SELECT id , title , content FROM board
+[DEBUG] 2021-04-26 14:42:19.484 [XNIO-1 task-1] selectBoardList - ==> Parameters: 
+[DEBUG] 2021-04-26 14:42:19.514 [XNIO-1 task-1] selectBoardList - <==      Total: 23
+[DEBUG] 2021-04-26 14:42:19.521 [XNIO-1 task-1] SpringManagedTransaction - Committing JDBC Connection [HikariProxyConnection@2071993713 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7]
+[DEBUG] 2021-04-26 14:42:19.522 [XNIO-1 task-1] SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@44f10109]
+[DEBUG] 2021-04-26 14:42:19.541 [XNIO-1 task-1] RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 14:42:19.542 [XNIO-1 task-1] RequestResponseBodyMethodProcessor - Writing ["{"totalCount":23,"list":[{"id":3,"title":"PUT하는 title","content":"content..."},{"id":4,"title":"제목임 (truncated)...]
+[DEBUG] 2021-04-26 14:42:19.572 [XNIO-1 task-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 14:42:40.763 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2021-04-26 14:42:40.763 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2021-04-26 14:43:09.002 [XNIO-1 task-1] security - Attempting to authenticate /board/14, authentication required: false
+[DEBUG] 2021-04-26 14:43:09.002 [XNIO-1 task-1] security - Authentication outcome was NOT_ATTEMPTED with method io.undertow.security.impl.CachedAuthenticatedSessionMechanism@107ccf79 for /board/14
+[DEBUG] 2021-04-26 14:43:09.002 [XNIO-1 task-1] security - Authentication result was ATTEMPTED for /board/14
+[DEBUG] 2021-04-26 14:43:09.003 [XNIO-1 task-1] DispatcherServlet - DELETE "/board/14", parameters={}
+[DEBUG] 2021-04-26 14:43:09.004 [XNIO-1 task-1] RequestMappingHandlerMapping - Mapped to com.kim9fe.test4.controller.BoardController#deleteBoard(long, BoardDTO)
+[DEBUG] 2021-04-26 14:43:09.008 [XNIO-1 task-1] SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2021-04-26 14:43:09.008 [XNIO-1 task-1] SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ac35981] was not registered for synchronization because synchronization is not active
+[DEBUG] 2021-04-26 14:43:09.008 [XNIO-1 task-1] DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2021-04-26 14:43:09.009 [XNIO-1 task-1] SpringManagedTransaction - JDBC Connection [HikariProxyConnection@551527626 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7] will not be managed by Spring
+[DEBUG] 2021-04-26 14:43:09.009 [XNIO-1 task-1] deleteBoard - ==>  Preparing: DELETE FROM board WHERE id = ?
+[DEBUG] 2021-04-26 14:43:09.010 [XNIO-1 task-1] deleteBoard - ==> Parameters: 14(Long)
+[DEBUG] 2021-04-26 14:43:09.013 [XNIO-1 task-1] deleteBoard - <==    Updates: 1
+[DEBUG] 2021-04-26 14:43:09.014 [XNIO-1 task-1] SpringManagedTransaction - Committing JDBC Connection [HikariProxyConnection@551527626 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7]
+[DEBUG] 2021-04-26 14:43:09.019 [XNIO-1 task-1] SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ac35981]
+[DEBUG] 2021-04-26 14:43:09.019 [XNIO-1 task-1] SqlSessionUtils - Creating a new SqlSession
+[DEBUG] 2021-04-26 14:43:09.019 [XNIO-1 task-1] SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77f68909] was not registered for synchronization because synchronization is not active
+[DEBUG] 2021-04-26 14:43:09.019 [XNIO-1 task-1] DataSourceUtils - Fetching JDBC Connection from DataSource
+[DEBUG] 2021-04-26 14:43:09.020 [XNIO-1 task-1] SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1360389854 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7] will not be managed by Spring
+[DEBUG] 2021-04-26 14:43:09.020 [XNIO-1 task-1] selectBoardList - ==>  Preparing: SELECT id , title , content FROM board
+[DEBUG] 2021-04-26 14:43:09.020 [XNIO-1 task-1] selectBoardList - ==> Parameters: 
+[DEBUG] 2021-04-26 14:43:09.024 [XNIO-1 task-1] selectBoardList - <==      Total: 22
+[DEBUG] 2021-04-26 14:43:09.024 [XNIO-1 task-1] SpringManagedTransaction - Committing JDBC Connection [HikariProxyConnection@1360389854 wrapping com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7]
+[DEBUG] 2021-04-26 14:43:09.024 [XNIO-1 task-1] SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@77f68909]
+[DEBUG] 2021-04-26 14:43:09.026 [XNIO-1 task-1] RequestResponseBodyMethodProcessor - Using 'text/plain', given [*/*] and supported [text/plain, */*, text/plain, */*, application/json, application/*+json, application/json, application/*+json]
+[DEBUG] 2021-04-26 14:43:09.026 [XNIO-1 task-1] RequestResponseBodyMethodProcessor - Writing ["{"totalCount":22,"list":[{"id":3,"title":"PUT하는 title","content":"content..."},{"id":4,"title":"제목임 (truncated)...]
+[DEBUG] 2021-04-26 14:43:09.027 [XNIO-1 task-1] DispatcherServlet - Completed 200 OK
+[DEBUG] 2021-04-26 14:43:10.767 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2021-04-26 14:43:10.767 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2021-04-26 14:43:40.781 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Pool stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2021-04-26 14:43:40.781 [HikariPool-1 housekeeper] HikariPool - HikariPool-1 - Fill pool skipped, pool is at sufficient level.
+[DEBUG] 2021-04-26 14:43:49.574 [File Watcher] Restarter - Restarting application
+[DEBUG] 2021-04-26 14:43:49.575 [Thread-5] Restarter - Stopping application
+[DEBUG] 2021-04-26 14:43:49.576 [Thread-5] AnnotationConfigServletWebServerApplicationContext - Closing org.springframework.boot.web.servlet.context.AnnotationConfigServletWebServerApplicationContext@3e567fff, started on Mon Apr 26 14:42:08 KST 2021
+[DEBUG] 2021-04-26 14:43:49.577 [Thread-5] DefaultLifecycleProcessor - Stopping beans in phase 2147483647
+[DEBUG] 2021-04-26 14:43:49.579 [Thread-5] DefaultLifecycleProcessor - Bean 'webServerGracefulShutdown' completed its stop procedure
+[DEBUG] 2021-04-26 14:43:49.579 [Thread-5] DefaultLifecycleProcessor - Stopping beans in phase 2147483646
+[INFO ] 2021-04-26 14:43:49.579 [Thread-5] undertow - stopping server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:43:49.582 [Thread-5] servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[DEBUG] 2021-04-26 14:43:49.585 [Thread-5] DefaultLifecycleProcessor - Bean 'webServerStartStop' completed its stop procedure
+[DEBUG] 2021-04-26 14:43:49.586 [Thread-5] AnnotationMBeanExporter - Unregistering JMX-exposed beans on shutdown
+[DEBUG] 2021-04-26 14:43:49.586 [Thread-5] AnnotationMBeanExporter - Unregistering JMX-exposed beans
+[INFO ] 2021-04-26 14:43:49.587 [Thread-5] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:43:49.588 [Thread-5] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[DEBUG] 2021-04-26 14:43:49.588 [Thread-5] HikariPool - HikariPool-1 - Before shutdown stats (total=10, active=0, idle=10, waiting=0)
+[DEBUG] 2021-04-26 14:43:49.590 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2e4d9cc7: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.595 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@33edae18: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.596 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@72d0a423: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.597 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@4368f158: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.598 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@12ff5b6c: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.599 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@537b7e6b: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.599 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@16b1253a: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.600 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@2ce91b5a: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.601 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@21ba225a: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.602 [HikariPool-1 connection closer] PoolBase - HikariPool-1 - Closing connection com.mysql.cj.jdbc.ConnectionImpl@5448b96: (connection evicted)
+[DEBUG] 2021-04-26 14:43:49.602 [Thread-5] HikariPool - HikariPool-1 - After shutdown stats (total=0, active=0, idle=0, waiting=0)
+[INFO ] 2021-04-26 14:43:49.603 [Thread-5] HikariDataSource - HikariPool-1 - Shutdown completed.
+[DEBUG] 2021-04-26 14:43:49.642 [Thread-5] Restarter - Created RestartClassLoader org.springframework.boot.devtools.restart.classloader.RestartClassLoader@7986195e
+[DEBUG] 2021-04-26 14:43:49.642 [Thread-5] Restarter - Starting application com.kim9fe.test4.Test4Application with URLs [file:/D:/workplace/test4/bin/main/]
+[INFO ] 2021-04-26 14:43:49.697 [restartedMain] Test4Application - Starting Test4Application using Java 15.0.2 on DESKTOP-J9A7V1A with PID 4360 (D:\workplace\test4\bin\main started by kim9f in d:\workplace\test4)
+[INFO ] 2021-04-26 14:43:49.698 [restartedMain] Test4Application - No active profile set, falling back to default profiles: default
+[WARN ] 2021-04-26 14:43:50.000 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2021-04-26 14:43:50.002 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-04-26 14:43:50.002 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 300 ms
+[INFO ] 2021-04-26 14:43:50.025 [restartedMain] HikariDataSource - HikariPool-2 - Starting...
+[INFO ] 2021-04-26 14:43:50.031 [restartedMain] HikariDataSource - HikariPool-2 - Start completed.
+[INFO ] 2021-04-26 14:43:50.120 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:43:50.201 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-04-26 14:43:50.214 [restartedMain] undertow - starting server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:43:50.223 [restartedMain] UndertowWebServer - Undertow started on port(s) 8080 (http)
+[INFO ] 2021-04-26 14:43:50.228 [restartedMain] Test4Application - Started Test4Application in 0.579 seconds (JVM running for 102.957)
+[INFO ] 2021-04-26 14:43:50.230 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2021-04-26 14:43:53.656 [Thread-7] undertow - stopping server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:43:53.660 [Thread-7] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:43:53.660 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown initiated...
+[INFO ] 2021-04-26 14:43:53.665 [Thread-7] HikariDataSource - HikariPool-2 - Shutdown completed.
+[INFO ] 2021-04-26 14:43:53.771 [restartedMain] Test4Application - Starting Test4Application using Java 15.0.2 on DESKTOP-J9A7V1A with PID 4360 (D:\workplace\test4\bin\main started by kim9f in d:\workplace\test4)
+[INFO ] 2021-04-26 14:43:53.772 [restartedMain] Test4Application - No active profile set, falling back to default profiles: default
+[WARN ] 2021-04-26 14:43:54.045 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2021-04-26 14:43:54.047 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-04-26 14:43:54.047 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 271 ms
+[INFO ] 2021-04-26 14:43:54.069 [restartedMain] HikariDataSource - HikariPool-3 - Starting...
+[INFO ] 2021-04-26 14:43:54.074 [restartedMain] HikariDataSource - HikariPool-3 - Start completed.
+[INFO ] 2021-04-26 14:43:54.153 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:43:54.241 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-04-26 14:43:54.252 [restartedMain] undertow - starting server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:43:54.261 [restartedMain] UndertowWebServer - Undertow started on port(s) 8080 (http)
+[INFO ] 2021-04-26 14:43:54.264 [restartedMain] Test4Application - Started Test4Application in 0.545 seconds (JVM running for 106.993)
+[INFO ] 2021-04-26 14:43:54.265 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2021-04-26 14:43:55.675 [Thread-11] undertow - stopping server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:43:55.677 [Thread-11] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:43:55.678 [Thread-11] HikariDataSource - HikariPool-3 - Shutdown initiated...
+[INFO ] 2021-04-26 14:43:55.682 [Thread-11] HikariDataSource - HikariPool-3 - Shutdown completed.
+[INFO ] 2021-04-26 14:43:55.764 [restartedMain] Test4Application - Starting Test4Application using Java 15.0.2 on DESKTOP-J9A7V1A with PID 4360 (D:\workplace\test4\bin\main started by kim9f in d:\workplace\test4)
+[INFO ] 2021-04-26 14:43:55.765 [restartedMain] Test4Application - No active profile set, falling back to default profiles: default
+[WARN ] 2021-04-26 14:43:56.012 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2021-04-26 14:43:56.014 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-04-26 14:43:56.014 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 246 ms
+[INFO ] 2021-04-26 14:43:56.030 [restartedMain] HikariDataSource - HikariPool-4 - Starting...
+[INFO ] 2021-04-26 14:43:56.035 [restartedMain] HikariDataSource - HikariPool-4 - Start completed.
+[INFO ] 2021-04-26 14:43:56.101 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:43:56.157 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-04-26 14:43:56.169 [restartedMain] undertow - starting server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:43:56.182 [restartedMain] UndertowWebServer - Undertow started on port(s) 8080 (http)
+[INFO ] 2021-04-26 14:43:56.186 [restartedMain] Test4Application - Started Test4Application in 0.468 seconds (JVM running for 108.914)
+[INFO ] 2021-04-26 14:43:56.187 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2021-04-26 14:46:13.000 [Thread-15] undertow - stopping server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:46:13.003 [Thread-15] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:46:13.003 [Thread-15] HikariDataSource - HikariPool-4 - Shutdown initiated...
+[INFO ] 2021-04-26 14:46:13.008 [Thread-15] HikariDataSource - HikariPool-4 - Shutdown completed.
+[INFO ] 2021-04-26 14:46:13.095 [restartedMain] Test4Application - Starting Test4Application using Java 15.0.2 on DESKTOP-J9A7V1A with PID 4360 (D:\workplace\test4\bin\main started by kim9f in d:\workplace\test4)
+[INFO ] 2021-04-26 14:46:13.096 [restartedMain] Test4Application - No active profile set, falling back to default profiles: default
+[WARN ] 2021-04-26 14:46:13.386 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2021-04-26 14:46:13.387 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-04-26 14:46:13.388 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 288 ms
+[INFO ] 2021-04-26 14:46:13.405 [restartedMain] HikariDataSource - HikariPool-5 - Starting...
+[INFO ] 2021-04-26 14:46:13.410 [restartedMain] HikariDataSource - HikariPool-5 - Start completed.
+[INFO ] 2021-04-26 14:46:13.472 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:46:13.517 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-04-26 14:46:13.528 [restartedMain] undertow - starting server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:46:13.540 [restartedMain] UndertowWebServer - Undertow started on port(s) 8080 (http)
+[INFO ] 2021-04-26 14:46:13.544 [restartedMain] Test4Application - Started Test4Application in 0.499 seconds (JVM running for 246.274)
+[INFO ] 2021-04-26 14:46:13.546 [restartedMain] ConditionEvaluationDeltaLoggingListener - Condition evaluation unchanged
+[INFO ] 2021-04-26 14:46:21.347 [XNIO-5 task-1] servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-04-26 14:46:21.348 [XNIO-5 task-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-04-26 14:46:21.348 [XNIO-5 task-1] DispatcherServlet - Completed initialization in 0 ms
+[INFO ] 2021-04-26 14:46:36.667 [restartedMain] Test4Application - Starting Test4Application using Java 15.0.2 on DESKTOP-J9A7V1A with PID 15984 (D:\workplace\test4\bin\main started by kim9f in d:\workplace\test4)
+[INFO ] 2021-04-26 14:46:36.681 [restartedMain] Test4Application - No active profile set, falling back to default profiles: default
+[INFO ] 2021-04-26 14:46:36.743 [restartedMain] DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+[INFO ] 2021-04-26 14:46:36.744 [restartedMain] DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+[WARN ] 2021-04-26 14:46:38.272 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[INFO ] 2021-04-26 14:46:38.298 [restartedMain] servlet - Initializing Spring embedded WebApplicationContext
+[INFO ] 2021-04-26 14:46:38.299 [restartedMain] ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1553 ms
+[INFO ] 2021-04-26 14:46:38.456 [restartedMain] HikariDataSource - HikariPool-1 - Starting...
+[INFO ] 2021-04-26 14:46:38.716 [restartedMain] HikariDataSource - HikariPool-1 - Start completed.
+[INFO ] 2021-04-26 14:46:39.228 [restartedMain] ThreadPoolTaskExecutor - Initializing ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:46:39.540 [restartedMain] OptionalLiveReloadServer - LiveReload server is running on port 35729
+[INFO ] 2021-04-26 14:46:39.590 [restartedMain] undertow - starting server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:46:39.601 [restartedMain] xnio - XNIO version 3.8.0.Final
+[INFO ] 2021-04-26 14:46:39.616 [restartedMain] nio - XNIO NIO Implementation Version 3.8.0.Final
+[INFO ] 2021-04-26 14:46:39.662 [restartedMain] threads - JBoss Threads version 3.1.0.Final
+[INFO ] 2021-04-26 14:46:39.713 [restartedMain] UndertowWebServer - Undertow started on port(s) 8080 (http)
+[INFO ] 2021-04-26 14:46:39.726 [restartedMain] Test4Application - Started Test4Application in 3.52 seconds (JVM running for 4.761)
+[INFO ] 2021-04-26 14:46:41.374 [XNIO-1 task-1] servlet - Initializing Spring DispatcherServlet 'dispatcherServlet'
+[INFO ] 2021-04-26 14:46:41.375 [XNIO-1 task-1] DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+[INFO ] 2021-04-26 14:46:41.376 [XNIO-1 task-1] DispatcherServlet - Completed initialization in 1 ms
+[INFO ] 2021-04-26 14:46:41.406 [XNIO-1 task-1] BoardServiceImpl - INFO....ID >>>> 0 LOGGER 사용
+[ERROR] 2021-04-26 14:46:41.406 [XNIO-1 task-1] BoardServiceImpl - ERROR...ID >>>> 0 LOGGER 사용
+[INFO ] 2021-04-26 14:46:41.457 [XNIO-1 task-1] BoardServiceImpl - REGIST RESULT = [1]
+[INFO ] 2021-04-26 14:47:19.652 [Thread-5] undertow - stopping server: Undertow - 2.2.7.Final
+[INFO ] 2021-04-26 14:47:19.656 [Thread-5] servlet - Destroying Spring FrameworkServlet 'dispatcherServlet'
+[INFO ] 2021-04-26 14:47:19.660 [Thread-5] ThreadPoolTaskExecutor - Shutting down ExecutorService 'applicationTaskExecutor'
+[INFO ] 2021-04-26 14:47:19.661 [Thread-5] HikariDataSource - HikariPool-1 - Shutdown initiated...
+[INFO ] 2021-04-26 14:47:19.673 [Thread-5] HikariDataSource - HikariPool-1 - Shutdown completed.
+[ERROR] 2021-04-26 14:47:37.518 [XNIO-2 task-1] BoardServiceImpl - ERROR...ID >>>> 0 LOGGER 사용
+[WARN ] 2021-04-26 14:48:11.701 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[ERROR] 2021-04-26 14:48:27.038 [XNIO-3 task-1] BoardServiceImpl - ERROR...ID >>>> 0 LOGGER 사용
+[WARN ] 2021-04-26 15:00:42.047 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[WARN ] 2021-04-26 15:01:20.805 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[WARN ] 2021-04-26 15:01:30.985 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[WARN ] 2021-04-26 15:01:45.239 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[WARN ] 2021-04-26 15:01:48.250 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[WARN ] 2021-04-26 15:02:03.436 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[ERROR] 2021-04-26 15:02:43.426 [XNIO-9 task-1] BoardServiceImpl - ERROR...ID >>>> 0 LOGGER 사용
+[WARN ] 2021-04-26 15:03:02.528 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[ERROR] 2021-04-26 15:03:03.415 [XNIO-10 task-1] BoardServiceImpl - ERROR...ID >>>> 0 LOGGER 사용
+[WARN ] 2021-04-26 15:03:20.721 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[WARN ] 2021-04-26 15:03:25.594 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[ERROR] 2021-04-26 15:03:31.933 [XNIO-12 task-1] BoardServiceImpl - ERROR...ID >>>> 0 LOGGER 사용
+[WARN ] 2021-04-26 15:03:50.802 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
+[WARN ] 2021-04-26 15:03:56.688 [restartedMain] jsr - UT026010: Buffer pool was not set on WebSocketDeploymentInfo, the default pool will be used
